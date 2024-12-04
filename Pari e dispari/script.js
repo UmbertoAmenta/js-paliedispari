@@ -20,6 +20,11 @@ if (evenOrOdds === true) {
     alert("Hai scelto dispari")
 }
 const userNum = Number(prompt("Ora scegli un numero intero compreso tra 1 e 5 (inclusi)"))
+while (isNaN(userNum)) {
+    alert("leggi con attenzione")
+    userNum = parseInt(prompt("Devi inserire un numero intero"))
+}
+console.log(numOne)
 console.log(evenOrOdds)
 console.log(userNum)
 
