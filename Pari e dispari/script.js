@@ -19,12 +19,11 @@ if (evenOrOdds === true) {
 } else {
     alert("Hai scelto dispari")
 }
-const userNum = Number(prompt("Ora scegli un numero intero compreso tra 1 e 5 (inclusi)"))
-while (isNaN(userNum)) {
+let userNum = Number(prompt("Ora scegli un numero intero compreso tra 1 e 5 (inclusi)"))
+while (isNaN(userNum) || userNum < 1 || userNum > 5) {
     alert("leggi con attenzione")
-    userNum = parseInt(prompt("Devi inserire un numero intero"))
+    userNum = parseInt(prompt("Devi inserire un numero intero tra 1 e 5 (estremi inclusi)"))
 }
-console.log(numOne)
 console.log(evenOrOdds)
 console.log(userNum)
 
